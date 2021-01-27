@@ -43,3 +43,13 @@ code {
    width: 48%;
    height: 80vh;
  }
+
+.editor-form {
+  background-color: #282c34;
+  font-size: 1.5rem;
+  color: white;
+  resize: none;
+  border: none;
+  width: 99%;
+  height: 99%;
+}
