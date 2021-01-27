@@ -21,7 +21,12 @@ class Editor extends React.Component {
           <textarea className="editor-form" value={this.state.text} onChange={this.onChange} />
         </div>
         <div className="view">
-          markdown view
+          {
+            unified()
+              .use(parse)
+              .use(remark2react)
+              .processSync(this.state.text).result
+          }
         </div>
       </div>
     )
