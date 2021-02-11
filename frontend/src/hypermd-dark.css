@@ -1,0 +1,9 @@
+.CodeMirror.cm-s-hypermd-dark {
+  height: 100%;
+  background-color: #282c34;
+  color: #fff;
+}
+.CodeMirror.cm-s-hypermd-dark .CodeMirror-gutters,
+.CodeMirror-gutter-elt {
+  display: none;
+}

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './hypermd-dark.css'
+
 const CodeMirror = require("codemirror")
 const HyperMD = require("hypermd")
 
@@ -10,10 +12,13 @@ class Editor extends React.Component {
   }
 
   setOptions() {
+    const defaultText = "# Aeonic Notes \n\nA smart web-based markdown editor"
     const options = {
+      mode: 'hypermd',
+      theme: 'hypermd-dark',
       lineNumbers: false,
       lineWrapping: true,
-      hmdHideToken: true
+      value: defaultText
     }
     return options
   }
