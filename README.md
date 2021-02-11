@@ -19,3 +19,9 @@ curl -X PUT http://127.0.0.1:5984/_replicator
 
 curl -X PUT http://127.0.0.1:5984/_global_changes
 ```
+
+## database
+Main database is the flat notes database
+Each document holds metadata, text and the folder tree it's in
+This will then be opened in the sidebar
+TODO: open several databases as folders

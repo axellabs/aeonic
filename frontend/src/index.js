@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Editor from "./Editor"
+import Editor from './Editor'
+import Sidebar from './Sidebar'
+
 
 function App() {
   return (
-    <div className="App container">
-      <header className="App-header">
-        Aeonic Notes
-      </header>
-      <Editor />
+    <div className="app">
+      <Sidebar />
+      <div className="app container">
+        <Editor />
+      </div>
     </div>
   )
 }
